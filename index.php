@@ -57,9 +57,9 @@
         <tr>
             <td>Sílabas</td><td><span class="">0</span></td>
         </tr>
-            <td>Sentenças</td><td><span class="">0</span></td>
+            <td>Sentenças</td><td><span class="sentence-count">1</span></td>
         <tr>
-            <td>Palavras únicas</td><td><span class="">0</span></td>
+            <td>Palavras únicas</td><td><span class="word-count">0</span></td>
         </tr>
     </table>
 </div>
@@ -75,15 +75,22 @@
             blocks = this.value.split(/\s/g); //all spaces types, each block is separated by space
             characters = this.value.split(/\S/g); //everything is not a space
             paragraphs = this.value.split(/\n/g); // all paragraphs
+            sentences = this.value.split("."); // all sentences
 
             // remove espaços em branco do array
             blocks = blocks.filter(function(str) {
                 return /\S/.test(str);
             });
 
+            // remove espaços em branco do array
+            sentences = sentences.filter(function(str) {
+                return /\S/.test(str);
+            });
+
             wordCounts = document.getElementsByClassName('word-count');
             characterCounts = document.getElementsByClassName('character-count');
             paragraphCounts = document.getElementsByClassName('paragraph-count');
+            sentenceCounts = document.getElementsByClassName('sentence-count');
 
             for(i=0;i<wordCounts.length;i++){
                 wordCounts[i].textContent = blocks.length;
@@ -96,6 +103,10 @@
             for(i=0;i<paragraphCounts.length;i++){
                 paragraphCounts[i].textContent = paragraphs.length;
             }
+
+            for(i=0;i<sentenceCounts.length;i++){
+                sentenceCounts[i].textContent = sentences.length;
+            }
         }else{
             for(i=0;i<wordCounts.length;i++){
                 wordCounts[i].textContent = 0;
@@ -105,8 +116,12 @@
                 characterCounts[i].textContent = 0;
             }
 
-            for(i=0;i<paragraphsCounts.length;i++){
+            for(i=0;i<paragraphCounts.length;i++){
                 paragraphCounts[i].textContent = 0;
+            }
+
+            for(i=0;i<sentenceCounts.length;i++){
+                sentenceCounts[i].textContent = 0;
             }
         }
 
