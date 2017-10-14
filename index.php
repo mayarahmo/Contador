@@ -39,27 +39,30 @@
     <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Sobre</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link" href="#">Ajude o contador</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link disabled" href="#">Disabled</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item dropdown">-->
+<!--                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
+<!--                <div class="dropdown-menu" aria-labelledby="dropdown01">-->
+<!--                    <a class="dropdown-item" href="#">Action</a>-->
+<!--                    <a class="dropdown-item" href="#">Another action</a>-->
+<!--                    <a class="dropdown-item" href="#">Something else here</a>-->
+<!--                </div>-->
+<!--            </li>-->
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+<!--        <form class="form-inline my-2 my-lg-0">-->
+<!--            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+<!--            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--        </form>-->
     </div>
 </nav>
 <div id="main-content" class="col-xs-12">
@@ -68,13 +71,19 @@
         <span>Caracteres: </span><span class="character-count">0</span><BR/>
     </div>
     <div id="main-form"  class="col-xs-12 col-md-6 float-left">
-        <form name="form-text" method="post" action="">
+        <form name="form-text" method="post" action="" class="col-md-11">
             <textarea id="text" name="text" cols="75" rows="15"></textarea><BR/>
             <!--    <button type="submit">Contar</button>-->
         </form>
+        <div id="functions-bar" class="row">
+            <form id="form-functions" action="">
+                <button type="submit" name="">Reverter texto</button>
+                <input type="text" name="word">&nbsp;<button type="submit" name="">Contar ocorrências</button>
+            </form>
+        </div>
     </div>
     <div id="main-info-table" class="col-xs-12 col-md-6 float-right">
-        <table id="table-stats">
+        <table id="table-stats" class="col-md-12">
             <tr>
                 <th colspan="2">Estatísticas básicas</th>
             </tr>
@@ -98,6 +107,9 @@
                 <td>Palavras únicas</td><td><span class="word-count">0</span></td>
             </tr>
         </table>
+        <div id="adsense-1" class="col-md-12">
+            <!-- PUT ADSENSE CODE HERE -->
+        </div>
     </div>
 </div>
 <!-- OS SCRIPTS -->

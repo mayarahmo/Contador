@@ -5,7 +5,8 @@ table, tr, th, td {
   border: 1px solid #000; }
 
 textarea {
-  margin: 0px; }
+  width: 100%;
+  resize: none; }
 
 #info-bar {
   padding: 20px;
@@ -18,12 +19,19 @@ textarea {
   width: 100%;
   margin: auto; }
 
+#form-functions {
+  padding: 30px; }
+
 @media screen and (max-width: 768px) {
   #main-content {
     margin-top: 30px; }
 
   #table-stats {
-    width: 90%;
-    margin: auto; } }
+    width: 100%;
+    margin: auto; }
+
+  #form-functions {
+    margin: auto;
+    padding: 15px; } }
 
 /*# sourceMappingURL=main.css.map */
