@@ -67,13 +67,13 @@
         <span>Palavras: </span><span class="word-count">0</span>
         <span>Caracteres: </span><span class="character-count">0</span><BR/>
     </div>
-    <div id="main-form"  class="col-xs-12 col-md-2 col-lg-2">
+    <div id="main-form"  class="col-xs-12 col-md-6 float-left">
         <form name="form-text" method="post" action="">
             <textarea id="text" name="text" cols="75" rows="15"></textarea><BR/>
             <!--    <button type="submit">Contar</button>-->
         </form>
     </div>
-    <div id="main-info-table" class="col-xs-12 col-md-2 col-lg-2">
+    <div id="main-info-table" class="col-xs-12 col-md-6 float-right">
         <table id="table-stats">
             <tr>
                 <th colspan="2">Estatísticas básicas</th>

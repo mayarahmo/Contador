@@ -4,11 +4,19 @@ body, table, td, th, tr {
 table, tr, th, td {
   border: 1px solid #000; }
 
+textarea {
+  margin: 0px; }
+
 #info-bar {
-  padding: 20px; }
+  padding: 20px;
+  text-align: left; }
 
 #main-info-table {
   text-align: center; }
+
+#table-stats {
+  width: 100%;
+  margin: auto; }
 
 @media screen and (max-width: 768px) {
   #main-content {
