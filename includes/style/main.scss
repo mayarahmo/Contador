@@ -1,6 +1,28 @@
 $white: #fff;
 $dark-gray: #444;
 $black: #000;
-table{
-  border:1px;
+*{
 }
+body,table,td,th,tr{
+  text-align: center;
+}
+table, tr,th,td{
+  border:1px solid #000;
+}
+#info-bar{
+  padding: 20px;
+}
+#main-info-table{
+  text-align: center;
+}
+@media screen and (max-width:768px){
+  #main-content{
+    margin-top: 30px;
+  }
+  #table-stats{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
