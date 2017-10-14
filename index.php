@@ -15,8 +15,12 @@
 
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
+
     <!-- BOOSTRAP -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
 
     <!-- MAIN STYLESHEET -->
     <link rel="stylesheet" href="includes/style/main.css"/>
@@ -24,8 +28,8 @@
 <body>
 <h1>Contador de palavras</h1>
 <div>
-    <span>Palavras: </span><span id="word-count"></span><BR/>
-    <span>Caracteres: </span><span id="character-count"></span><BR/>
+    <span>Palavras: </span><span class="word-count">0</span><BR/>
+    <span>Caracteres: </span><span class="character-count">0</span><BR/>
 <form name="form-text" method="post" action="">
     <textarea id="text" name="text" cols="75" rows="15"></textarea><BR/>
 <!--    <button type="submit">Contar</button>-->
@@ -39,23 +43,23 @@
             <th>Estatísticas básicas</th>
         </tr>
         <tr>
-            <td>Palavras</td><td>Yellow</td>
+            <td>Palavras</td><td><span class="word-count">0</span></td>
         </tr>
         <tr>
-            <td>Caracteres</td><td>Yellow</td>
+            <td>Caracteres</td><td><span class="character-count">0</span></td>
         </tr>
         <tr>
             <th>Outras estatísticas</th>
         </tr>
         <tr>
-            <td>Parágrafos</td><td>Yellow</td>
+            <td>Parágrafos</td><td><span class="paragraph-count">0</span></td>
         </tr>
         <tr>
-            <td>Sílabas</td><td>Yellow</td>
+            <td>Sílabas</td><td><span class="">0</span></td>
         </tr>
-            <td>Sentenças</td><td>Yellow</td>
+            <td>Sentenças</td><td><span class="">0</span></td>
         <tr>
-            <td>Palavras únicas</td><td>Yellow</td>
+            <td>Palavras únicas</td><td><span class="">0</span></td>
         </tr>
     </table>
 </div>
@@ -65,12 +69,47 @@
     var textareaText = document.getElementById('text');
 
     textareaText.onkeyup = function(){
-        spaces = this.value.split(/\s/g); //all spaces types
-        characters = this.value.split(/\s/g); //all
 
-        WordCount = document.getElementById('word-count');
-        //alert(content.length);
-        WordCount.textContent = spaces.length;
+        if (this.value != ""){
+
+            blocks = this.value.split(/\s/g); //all spaces types, each block is separated by space
+            characters = this.value.split(/\S/g); //everything is not a space
+            paragraphs = this.value.split(/\n/g); // all paragraphs
+
+            // remove espaços em branco do array
+            blocks = blocks.filter(function(str) {
+                return /\S/.test(str);
+            });
+
+            wordCounts = document.getElementsByClassName('word-count');
+            characterCounts = document.getElementsByClassName('character-count');
+            paragraphCounts = document.getElementsByClassName('paragraph-count');
+
+            for(i=0;i<wordCounts.length;i++){
+                wordCounts[i].textContent = blocks.length;
+            }
+
+            for(i=0;i<characterCounts.length;i++){
+                characterCounts[i].textContent = characters.length -1;
+            }
+
+            for(i=0;i<paragraphCounts.length;i++){
+                paragraphCounts[i].textContent = paragraphs.length;
+            }
+        }else{
+            for(i=0;i<wordCounts.length;i++){
+                wordCounts[i].textContent = 0;
+            }
+
+            for(i=0;i<characterCounts.length;i++){
+                characterCounts[i].textContent = 0;
+            }
+
+            for(i=0;i<paragraphsCounts.length;i++){
+                paragraphCounts[i].textContent = 0;
+            }
+        }
+
     }
 
 </script>
