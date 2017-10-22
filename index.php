@@ -76,10 +76,10 @@
             <!--    <button type="submit">Contar</button>-->
         </form>
         <div id="functions-bar" class="row">
-            <form id="form-functions" action="">
-                <button type="submit" name="">Reverter texto</button>
-                <input type="text" name="word">&nbsp;<button type="submit" name="">Contar ocorrências</button>
-            </form>
+<!--            <form id="form-functions" action="">-->
+                <button onclick="revert()" name="">Reverter texto</button>
+                <input type="text" name="word" id="word">&nbsp;<button onclick="countOcurrences(document.getElementById('word').value)">Contar ocorrências</button><span id="word-ocurrences"></span>
+<!--            </form>-->
         </div>
     </div>
     <div id="main-info-table" class="col-xs-12 col-md-6 float-right">
@@ -121,13 +121,13 @@
 
         if (this.value != ""){
 
-            blocks = this.value.split(/\s/g); //all spaces types, each block is separated by space
+            words = this.value.split(/\s/g); //all spaces types, each block is separated by space
             characters = this.value.split(/\S/g); //everything is not a space
             paragraphs = this.value.split(/\n/g); // all paragraphs
             sentences = this.value.split("."); // all sentences
 
             // remove espaços em branco do array
-            blocks = blocks.filter(function(str) {
+            words = words.filter(function(str) {
                 return /\S/.test(str);
             });
 
@@ -142,7 +142,7 @@
             sentenceCounts = document.getElementsByClassName('sentence-count');
 
             for(i=0;i<wordCounts.length;i++){
-                wordCounts[i].textContent = blocks.length;
+                wordCounts[i].textContent = words.length;
             }
 
             for(i=0;i<characterCounts.length;i++){
@@ -174,6 +174,20 @@
             }
         }
 
+    }
+
+    function revert(){
+       var content =  textareaText.value.split("").reverse().join("");
+        textareaText.value = content;
+    }
+
+    function countOcurrences(word){
+        words = textareaText.value.split(/\s/g); //all spaces types, each block is separated by space
+        var count = 0;
+        for(i=0;i<words.length;i++){
+            if(words[i] == word) count++;
+        }
+        if(document.getElementById("word").value != "") document.getElementById("word-ocurrences").innerHTML = count;
     }
 
 </script>
