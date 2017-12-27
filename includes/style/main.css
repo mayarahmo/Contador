@@ -1,16 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Leckerli+One");
+@import url("https://fonts.googleapis.com/css?family=Homemade+Apple");
 body, table, td, th, tr {
   text-align: center; }
 
+table {
+  text-transform: uppercase;
+  width: 100%; }
+
 table, tr, th, td {
-  border: 1px solid #000; }
+  border: none;
+  padding: 4px 0px;
+  letter-spacing: 4px;
+  background: #ccffcc; }
+
+tr {
+  background-color: #fdf9f9; }
 
 textarea {
   width: 100%;
-  resize: none; }
+  resize: none;
+  border-radius: 3px; }
+
+button, select {
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #000;
+  color: #000;
+  padding: 8px;
+  background-color: #99ff99;
+  border: none; }
+
+.navbar {
+  background-color: #00ace6;
+  text-transform: uppercase; }
+
+.navbar-brand {
+  color: #fff;
+  font-family: 'Homemade Apple', cursive;
+  text-transform: none;
+  font-size: 29px; }
+
+span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocurrences {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000;
+  padding: 1px 2px;
+  box-shadow: 0.1px 0.1px grey;
+  background-color: #fff;
+  border-radius: 3px; }
+
+#word-ocurrences {
+  margin-left: 5px; }
+
+.navbar-nav .nav-link {
+  color: #fff; }
+
+.navbar-toggler-icon {
+  background-image: url("../media/mobile/mobile-navigation-ico.png"); }
+
+.flow-text {
+  padding: 0px 30px; }
+
+.conceptual-img {
+  padding: 10px; }
 
 #info-bar {
   padding: 20px;
-  text-align: left; }
+  text-align: left;
+  text-transform: uppercase; }
+
+#tools-list {
+  width: 100%;
+  list-style-type: gurmukhi; }
+
+#tools-list li {
+  max-width: 300px;
+  margin: auto;
+  padding: 2px 0px; }
 
 #main-info-table {
   text-align: center; }
@@ -22,7 +89,28 @@ textarea {
 #form-functions {
   padding: 30px; }
 
-@media screen and (max-width: 768px) {
+#functions-bar {
+  padding: 5px 0px; }
+
+footer {
+  background: #00ace6;
+  max-height: 150px;
+  position: absolute;
+  width: 100%;
+  margin-top: 400px;
+  bottom: 0px;
+  padding: 15px 0px 10px;
+  color: #fff; }
+
+/* posts */
+.post-area {
+  border: 1px solid #bfbfbf;
+  min-height: 600px; }
+
+.main-section.post-section h2 {
+  padding: 45px 0px; }
+
+@media screen and (max-width: 1024px) {
   #main-content {
     margin-top: 30px; }
 
@@ -32,6 +120,18 @@ textarea {
 
   #form-functions {
     margin: auto;
-    padding: 15px; } }
+    padding: 15px; }
+
+  #info-bar {
+    padding: 0px 20px 20px; }
+
+  #functions-bar {
+    padding: 25px 0px; }
+
+  footer {
+    margin-top: 800px; }
+
+  .navbar-brand {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=main.css.map */
