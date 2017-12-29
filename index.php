@@ -53,10 +53,5 @@
     </div>
 </div>
 <?php include_once "footer.php"; ?>
-<!--<script>-->
-<!--$(document).ready( function () {-->
-<!--    alert("oi");-->
-<!--});-->
-<!--</script>-->
 </body>
 </html>

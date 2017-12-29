@@ -1,7 +1,11 @@
 $(document).ready( function () {
+    alert("oi");
     $("#word-ocurrences").on('DOMSubtreeModified', function (){
-        n = $(this).html();
-        v ((n = +n+1) < 10 ? "0" : "") + n;
-        $(this).textContent = v;
+        alert($(this).html());
+        // n = $(this).html();
+        // n = new Number(n);
+        // v ((n = +n+1) < 10 ? "0" : "") + n;
+        // alert(v);
+        // $(this).textContent = v;
     });
 });

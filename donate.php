@@ -8,8 +8,8 @@
     <div class="col-md-9 post-area">
         <h2>Ajude o Contador de palavras</h2>
 
-        <p class="flow-text">O contador de palavras nasceu para permanecer gratuito e pretendemos continuar assim. Ajude este projeto a ser permanecer totalmente assim.
-        Nossa intenção é oferecer ferramentas de texto tanto gratuitas quanto pagas sem nenhum custo para ninguém. </p>
+        <p class="flow-text">O contador de palavras nasceu para permanecer gratuito e pretendemos continuar assim. Ajude este projeto a ser permanecer desse jeito.
+        Nossa intenção é oferecer ferramentas de texto tanto gratuitas quanto pagas e estamos trabalhando para isso: na expansão e melhoramento deste projeto. </p>
 
     </div>
     <div class="col-md-3 sidebar">

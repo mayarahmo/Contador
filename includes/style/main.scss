@@ -26,7 +26,7 @@ table, tr,th,td{
   border:none;
   padding: 4px 0px;
   letter-spacing: 4px;
-  background: #ccffcc;
+  background: #ffff99;
 }
 th{
 
@@ -46,7 +46,7 @@ button, select{
   border: 1px solid #000;
   color: #000;
   padding: 8px;
-  background-color: #99ff99;
+  background-color: #8DC63F;
   border: none;
 }
 .navbar{
@@ -97,6 +97,9 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   margin:auto;
   padding: 2px 0px;
 }
+#main-content{
+  min-height: 565px;
+}
 #main-info-table{
   text-align: center;
 }
@@ -116,9 +119,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
 footer{
   background: #00ace6;
   max-height: 150px;
-  position: absolute;
   width: 100%;
-  margin-top: 400px;
   bottom: 0px;
   padding: 15px 0px 10px;
   color: #fff;
@@ -131,9 +132,11 @@ footer{
 .main-section.post-section h2{
   padding: 45px 0px;
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:767px){
   #main-content{
-    margin-top: 30px;
+    margin-top: 25px;
+    position: relative;
+    min-height: 765px;
   }
   #table-stats{
     width: 100%;
@@ -150,7 +153,10 @@ footer{
     padding: 25px 0px;
   }
   footer{
-    margin-top: 800px;
+    margin-top: 150px;
+    height: 80px;
+    padding: 15px 0px 0px;
+
   }
   .navbar-brand{
     font-size: 20px;
