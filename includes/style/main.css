@@ -12,7 +12,6 @@ table {
   width: 100%; }
 
 table, tr, th, td {
-  padding: 4px 0px;
   letter-spacing: 1px;
   color: #000; }
 
@@ -61,6 +60,9 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   box-shadow: 0.1px 0.1px grey;
   background-color: #fff;
   border-radius: 3px; }
+
+.copyright {
+  margin-right: 15px; }
 
 #word {
   text-transform: uppercase;
@@ -132,6 +134,12 @@ footer {
   margin-bottom: 0px;
   text-align: right;
   margin-right: 15px; }
+
+footer .language-switcher {
+  margin-left: 25px; }
+
+footer .language-switcher img {
+  padding: 0px 7px; }
 
 .main-footer.post-footer {
   margin-top: 0px; }
