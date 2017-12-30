@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef488bee-1957-449f-9f56-92fc192d7b57" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/head.php" afterPath="$PROJECT_DIR$/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/script/main.js" afterPath="$PROJECT_DIR$/includes/script/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/style/main.css" afterPath="$PROJECT_DIR$/includes/style/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/style/main.css.map" afterPath="$PROJECT_DIR$/includes/style/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/style/main.scss" afterPath="$PROJECT_DIR$/includes/style/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navbar.php" afterPath="$PROJECT_DIR$/navbar.php" />
     </list>
     <ignored path="Contador.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,8 +89,8 @@
       <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+            <state relative-caret-position="374">
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -317,7 +310,7 @@
       <workItem from="1514396274981" duration="18195000" />
       <workItem from="1514573848096" duration="4444000" />
       <workItem from="1514579743414" duration="22338000" />
-      <workItem from="1514612800968" duration="3711000" />
+      <workItem from="1514612800968" duration="3739000" />
     </task>
     <task id="LOCAL-00001" summary="Funcs ended and style almost">
       <created>1514414656084</created>
@@ -347,17 +340,24 @@
       <option name="project" value="LOCAL" />
       <updated>1514607811952</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Novo estilo">
+      <created>1514616721173</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1514616721173</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104693000" />
+    <option name="totallyTimeSpent" value="104721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1954612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1954612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -408,7 +408,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Funcs ended and style almost" />
-    <option name="LAST_COMMIT_MESSAGE" value="Funcs ended and style almost" />
+    <MESSAGE value="Novo estilo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Novo estilo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -823,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+        <state relative-caret-position="374">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding />
         </state>
       </provider>
