@@ -6,7 +6,7 @@ textareaText.onkeyup = function(){
 
         words = this.value.split(/\s/g); //all spaces types, each block is separated by space
         characters = this.value.split(/\S/g); //everything is not a space
-        paragraphs = this.value.split(/\n/g); // all paragraphs
+        lines = this.value.split(/\n/g); // all lines
         sentences = this.value.split("."); // all sentences
 
         // remove espaços em branco do array
@@ -23,6 +23,7 @@ textareaText.onkeyup = function(){
         characterCounts = document.getElementsByClassName('character-count');
         paragraphCounts = document.getElementsByClassName('paragraph-count');
         sentenceCounts = document.getElementsByClassName('sentence-count');
+        lineCounts = document.getElementsByClassName('line-count');
 
         for(i=0;i<wordCounts.length;i++){
             wordCounts[i].textContent = words.length;
@@ -32,28 +33,43 @@ textareaText.onkeyup = function(){
             characterCounts[i].textContent = characters.length -1;
         }
 
+        var paragraphs = 0;
+        for(i=0;i<lines.length;i++){
+            if(lines[i] != "") {
+                paragraphs++;
+            }
+        }
+
         for(i=0;i<paragraphCounts.length;i++){
-            paragraphCounts[i].textContent = paragraphs.length;
+            paragraphCounts[i].textContent = paragraphs;
         }
 
         for(i=0;i<sentenceCounts.length;i++){
             sentenceCounts[i].textContent = sentences.length;
         }
+
+        for(i=0;i<lineCounts.length;i++){
+            lineCounts[i].textContent = lines.length;
+        }
     }else{
         for(i=0;i<wordCounts.length;i++){
-            wordCounts[i].textContent = 0;
+            wordCounts[i].textContent = 00;
         }
 
         for(i=0;i<characterCounts.length;i++){
-            characterCounts[i].textContent = 0;
+            characterCounts[i].textContent = 00;
         }
 
         for(i=0;i<paragraphCounts.length;i++){
-            paragraphCounts[i].textContent = 0;
+            paragraphCounts[i].textContent = 00;
+        }
+
+        for(i=0;i<lineCounts.length;i++){
+            lineCounts[i].textContent = 00;
         }
 
         for(i=0;i<sentenceCounts.length;i++){
-            sentenceCounts[i].textContent = 0;
+            sentenceCounts[i].textContent = 00;
         }
     }
 

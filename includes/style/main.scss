@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Leckerli+One');
 @import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
 
 $white: #fff;
 $dark-gray: #444;
@@ -13,6 +14,7 @@ $light-green: #ccffcc;
 $lighter-green: #e6ffe6;
 $red: red;
 *{
+  font-family: 'Oswald', sans-serif;
 }
 body,table,td,th,tr{
   text-align: center;
@@ -41,7 +43,6 @@ textarea{
   border-radius: 3px;
 }
 button, select{
-  text-transform: uppercase;
   background-color: #fff;
   border-radius: 5px;
   border: 1px solid #000;
@@ -50,6 +51,7 @@ button, select{
   background-color: #DAD8D8;
   border: none;
   font-weight: bold;
+  font-size: 20px;
 }
 .navbar{
   background-color: #00ace6;
@@ -57,18 +59,16 @@ button, select{
 }
 .navbar-brand{
   color: $black;
-  font-family: 'Homemade Apple', cursive;
   text-transform: none;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
   padding: 3px;
 }
 .main-section.post-section h2{
-  font-family: 'Homemade Apple', cursive;
   padding: 45px 0px 30px;
   font-weight: bold;
 }
-span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocurrences{
+span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocurrences, .line-count{
   font-weight: bold;
   font-size: 25px;
   color: $black;
@@ -76,6 +76,11 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   box-shadow: 0.1px 0.1px grey;
   background-color: $white;
   border-radius: 3px;
+}
+#word{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
 }
 #word-ocurrences{
   margin-left: 5px;
@@ -88,6 +93,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
 }
 .nav-item{
   padding: 0px 45px;
+  font-weight: bold;
 }
 .navbar-toggler-icon{
   background-image: url('../media/mobile/mobile-navigation-ico.png');
@@ -142,6 +148,8 @@ footer{
   color: #000;
   margin-top: 195px;
   margin-bottom: 0px;
+  text-align: right;
+  margin-right: 15px;
 }
 .main-footer.post-footer{
   margin-top:0px;
@@ -197,6 +205,9 @@ footer{
   }
   .main-footer.post-footer{
     margin-top: 195px;
+  }
+  footer{
+    text-align: center;
   }
 }
 

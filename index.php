@@ -11,13 +11,13 @@
     </div>
     <div id="main-form"  class="col-xs-12 col-md-6 float-left">
         <form name="form-text" method="post" action="" class="">
-            <textarea id="text" name="text" cols="75" rows="15"></textarea><BR/>
+            <textarea id="text" name="text" cols="75" rows="12" placeholder="<-- Coloque seu texto aqui -->"></textarea><BR/>
             <!--    <button type="submit">Contar</button>-->
         </form>
         <div id="functions-bar" class="float-left">
 <!--            <form id="form-functions" action="">-->
                 <input type="text" name="word" id="word" class="ipt-count-word">&nbsp;<button class="btn-count-word" onclick="countOcurrences(document.getElementById('word').value)">Conta palavra</button><span id="word-ocurrences">00</span>
-                <button onclick="revert()" name="" class="btn-invert-text">Inverter texto &#8645;</button>
+                <button onclick="revert()" name="" class="btn-invert-text">Inverte texto &#8645;</button>
 <!--
                 </form>-->
         </div>
@@ -32,6 +32,9 @@
             </tr>
             <tr>
                 <td>Caracteres</td><td><span class="character-count">00</span></td>
+            </tr>
+            <tr>
+                <td>Linhas</td><td><span class="line-count">00</span></td>
             </tr>
             <tr>
                 <th colspan="2">Outras estatísticas</th>
