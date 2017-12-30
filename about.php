@@ -4,10 +4,10 @@
 </head>
 <body>
 <?php include_once "navbar.php"; ?>
-<div class="main-section post-section">
+<div class="main-section post-section post-about">
     <div class="col-md-9 post-area">
         <h2>O Contador de palavras</h2>
-        <p class="flow-text">O contador de palavras nasceu em janeiro de 2018 com objetivo de oferecer a você ferramentas de texto grátis e pretendemos permanecer assim.</p>
+        <p class="flow-text">O contador de palavras nasceu em janeiro de 2018 com objetivo de oferecer ferramentas de texto grátis e pretendemos permanecer assim.</p>
         <p class="flow-text">Atualmente a ferramenta conta com as seguintes funcionalidades:</p>
 
         <ul id="tools-list">

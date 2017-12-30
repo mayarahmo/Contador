@@ -74,7 +74,7 @@ function countOcurrences(word){
 }
 
 function slicefunc(element){
-    alert("oi");
+    // alert("oi");
     //alert(document.getElementById(element));
     //alert(element.innerText);
     //element.textContent = ('0' + element.innerText).slice(-2);

@@ -10,8 +10,11 @@ table {
 table, tr, th, td {
   border: none;
   padding: 4px 0px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   background: #ffff99; }
+
+#paypal-form {
+  margin-top: 20px; }
 
 tr {
   background-color: #fdf9f9; }
@@ -39,7 +42,13 @@ button, select {
   color: #fff;
   font-family: 'Homemade Apple', cursive;
   text-transform: none;
-  font-size: 29px; }
+  font-size: 29px;
+  font-weight: bold;
+  margin-right: 45px; }
+
+.main-section.post-section h2 {
+  font-family: 'Homemade Apple', cursive;
+  padding: 45px 0px 30px; }
 
 span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocurrences {
   font-weight: bold;
@@ -53,6 +62,9 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
 #word-ocurrences {
   margin-left: 5px; }
 
+.post-area {
+  min-height: 542px; }
+
 .navbar-nav .nav-link {
   color: #fff; }
 
@@ -63,7 +75,8 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   padding: 0px 30px; }
 
 .conceptual-img {
-  padding: 10px; }
+  padding: 10px;
+  width: 30%; }
 
 #info-bar {
   padding: 20px;
@@ -80,7 +93,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   padding: 2px 0px; }
 
 #main-content {
-  min-height: 565px; }
+  min-height: 350px; }
 
 #main-info-table {
   text-align: center; }
@@ -97,19 +110,20 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
 
 footer {
   background: #00ace6;
-  max-height: 150px;
+  max-height: 60px;
   width: 100%;
   bottom: 0px;
-  padding: 15px 0px 10px;
-  color: #fff; }
+  padding: 20px 0px;
+  color: #fff;
+  margin-top: 195px;
+  margin-bottom: 0px; }
+
+.main-footer.post-footer {
+  margin-top: 0px; }
 
 /* posts */
 .post-area {
-  border: 1px solid #bfbfbf;
-  min-height: 600px; }
-
-.main-section.post-section h2 {
-  padding: 45px 0px; }
+  border-right: 1px solid #bfbfbf; }
 
 @media screen and (max-width: 767px) {
   #main-content {
@@ -129,14 +143,28 @@ footer {
     padding: 0px 20px 20px; }
 
   #functions-bar {
-    padding: 25px 0px; }
+    padding: 20px 0px; }
 
   footer {
-    margin-top: 150px;
     height: 80px;
-    padding: 15px 0px 0px; }
+    padding: 15px 0px 0px;
+    max-height: 200px; }
 
   .navbar-brand {
-    font-size: 20px; } }
+    font-size: 19px;
+    margin-right: 0px; }
+
+  .conceptual-img {
+    width: 70%; }
+
+  .post-area {
+    border: none;
+    min-height: 600px; }
+
+  .main-section.post-section.post-about {
+    max-height: 460px; }
+
+  .main-section.post-section.post-donate {
+    max-height: 350px; } }
 
 /*# sourceMappingURL=main.css.map */

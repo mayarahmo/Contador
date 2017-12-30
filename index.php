@@ -39,9 +39,9 @@
             <tr>
                 <td>Parágrafos</td><td><span class="paragraph-count">00</span></td>
             </tr>
-            <tr>
-                <td>Sílabas</td><td><span class="">-</span></td>
-            </tr>
+<!--            <tr>-->
+<!--                <td>Sílabas</td><td><span class="">-</span></td>-->
+<!--            </tr>-->
             <td>Sentenças</td><td><span class="sentence-count">01</span></td>
             <tr>
                 <td>Palavras únicas</td><td><span class="word-count">00</span></td>
