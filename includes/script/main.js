@@ -26,11 +26,11 @@ textareaText.onkeyup = function(){
         lineCounts = document.getElementsByClassName('line-count');
 
         for(i=0;i<wordCounts.length;i++){
-            wordCounts[i].textContent = words.length;
+            wordCounts[i].textContent = ('0' + words.length).slice(-2);
         }
 
         for(i=0;i<characterCounts.length;i++){
-            characterCounts[i].textContent = characters.length -1;
+            characterCounts[i].textContent = ('0' + (characters.length -1)).slice(-2);
         }
 
         var paragraphs = 0;
@@ -39,37 +39,36 @@ textareaText.onkeyup = function(){
                 paragraphs++;
             }
         }
-
         for(i=0;i<paragraphCounts.length;i++){
-            paragraphCounts[i].textContent = paragraphs;
+            paragraphCounts[i].textContent = ('0' + paragraphs).slice(-2);
         }
 
         for(i=0;i<sentenceCounts.length;i++){
-            sentenceCounts[i].textContent = sentences.length;
+            sentenceCounts[i].textContent = ('0' + sentences.length).slice(-2);
         }
 
         for(i=0;i<lineCounts.length;i++){
-            lineCounts[i].textContent = lines.length;
+            lineCounts[i].textContent = ('0' + lines.length).slice(-2);
         }
     }else{
         for(i=0;i<wordCounts.length;i++){
-            wordCounts[i].textContent = 00;
+            wordCounts[i].textContent = '00';
         }
 
         for(i=0;i<characterCounts.length;i++){
-            characterCounts[i].textContent = 00;
+            characterCounts[i].textContent = '00';
         }
 
         for(i=0;i<paragraphCounts.length;i++){
-            paragraphCounts[i].textContent = 00;
+            paragraphCounts[i].textContent = '00';
         }
 
         for(i=0;i<lineCounts.length;i++){
-            lineCounts[i].textContent = 00;
+            lineCounts[i].textContent = '00';
         }
 
         for(i=0;i<sentenceCounts.length;i++){
-            sentenceCounts[i].textContent = 00;
+            sentenceCounts[i].textContent = '00';
         }
     }
 
@@ -86,7 +85,7 @@ function countOcurrences(word){
     for(i=0;i<words.length;i++){
         if(words[i] == word) count++;
     }
-    if(document.getElementById("word").value != "") document.getElementById("word-ocurrences").innerHTML = count;
+    if(document.getElementById("word").value != "") document.getElementById("word-ocurrences").innerHTML = ('0' + count).slice(-2);
 }
 
 function slicefunc(element){

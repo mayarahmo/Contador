@@ -144,6 +144,9 @@ footer .language-switcher img {
 .main-footer.post-footer {
   margin-top: 0px; }
 
+.navbar-nav.mr-auto {
+  margin-left: 45px; }
+
 /* posts */
 .post-area {
   border-right: 1px solid #bfbfbf; }
@@ -197,6 +200,12 @@ footer .language-switcher img {
     margin-top: 195px; }
 
   footer {
-    text-align: center; } }
+    text-align: center; }
+
+  .nav-item {
+    padding: 0px; }
+
+  navbar-nav.mr-auto {
+    margin: auto; } }
 
 /*# sourceMappingURL=main.css.map */
