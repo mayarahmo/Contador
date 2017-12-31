@@ -49,6 +49,9 @@
             <tr>
                 <td>Palavras únicas</td><td><span class="word-count">00</span></td>
             </tr>
+            <tr>
+                <th colspan="2">Densidade de palavras (Em breve)</th>
+            </tr>
         </table>
         <div id="adsense-1" class="col-md-12">
             <!-- PUT ADSENSE CODE HERE -->
