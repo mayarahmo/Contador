@@ -83,7 +83,7 @@ function countOcurrences(word){
     words = textareaText.value.split(/\s/g); //all spaces types, each block is separated by space
     var count = 0;
     for(i=0;i<words.length;i++){
-        if(words[i] == word) count++;
+        if(words[i].toUpperCase() == word.toUpperCase()) count++;
     }
     if(document.getElementById("word").value != "") document.getElementById("word-ocurrences").innerHTML = ('0' + count).slice(-2);
 }

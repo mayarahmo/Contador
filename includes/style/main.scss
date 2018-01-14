@@ -1,148 +1,179 @@
-@import url('https://fonts.googleapis.com/css?family=Leckerli+One');
-@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
 
-
 $white: #fff;
+$light-gray: #f3f2f2;
 $dark-gray: #444;
 $black: #000;
-$main-blue: #33bbff;
-$middle-blue: #CCE6FE;
-$light-blue: #e6f2ff;
-$lighter-blue: #f0f5f5;
-$dark-blue: #0066cc;
-$light-green: #ccffcc;
-$lighter-green: #e6ffe6;
-$red: red;
+$green: #7de09b;
+$light-green: #1cc580;
+$orange: #ffc107;
+$dark-green: #28a745;
+$yellow: #ffe907;
+$light-yellow: #fbee66;
+
+
 *{
   font-family: 'Oswald', sans-serif;
 }
+
 body,table,td,th,tr{
   text-align: center;
 }
+
 table{
   text-transform: uppercase;
   width: 100%;
-
 }
+
 table, tr,th,td{
-  letter-spacing: 1px;
   color: $black;
 }
+
 #paypal-form{
   margin-top: 20px;
 }
+
 th{
-  border: 1px solid #d8d8d8;
-  background-color: #68b77a;
-  color: $black;
-  font-weight: normal;
-  font-size: 20px;
+  background-color: $light-gray;
+  font-weight: bold;
+  font-size: 19px;
+  text-transform: none;
+  text-decoration: underline;
 }
+
+tr{
+  letter-spacing: 2px;
+  background-color: $light-gray;
+}
+
 td{
   text-transform: none;
-  font-size: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
+
 textarea{
   width: 100%;
   resize: none;
   border-radius: 5px;
-  border: 3px solid #89f6ae;
+  border: 3px solid $green;
 }
+
 button, select{
-  background-color: #fff;
+  background-color: $green;
   border-radius: 5px;
-  border: 1px solid #000;
-  color: #fff;
-  padding: 4px 8px;
-  background-color: #725C4E;
+  color: $white;
+  padding: 8px 12px;
   border: none;
-  font-size: 22px;
+  font-size: 20px;
+  background-color: $dark-green;
+  border: $dark-green;
 }
+
 .navbar{
-  background-color: #68b77a;
-  text-transform: uppercase;
-  border-bottom: 4px solid #88f981;
-  border-bottom: 3px solid #5f5f5f;
+  color: $white;
+  background-color: $light-gray;
 }
+
 .navbar-brand{
-  color: $black;
   text-transform: none;
-  font-size: 30px;
+  font-size:24px;
   font-weight: bold;
   padding: 3px;
+  color:$black;
 }
+.navbar-brand:hover{
+  color: $white;
+}
+
 .main-section.post-section h2{
   padding: 45px 0px 30px;
   font-weight: bold;
 }
+
 span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocurrences, .line-count{
   font-weight: bold;
-  font-size: 25px;
-  color: $black;
+  font-size: 26px;
+  color: $light-green;
   padding: 1px 2px;
   box-shadow: 0.1px 0.1px grey;
   background-color: $white;
   border-radius: 2px;
 }
+
 .copyright{
   margin-right: 15px;
+  color: #5f5d5d;
 }
+
 #word{
   text-transform: uppercase;
   font-weight: bold;
-  color: red;
+  color: $orange;
 }
 #word-ocurrences{
   margin-left: 5px;
 }
+
 .post-area{
   min-height: 542px;
 }
+
 .navbar-nav .nav-link{
-  color: $white;
+  color: #2d2d2d;
 }
+
 .nav-item{
   padding: 0px 45px;
   font-weight: bold;
   font-size: 18px;
 }
+
 .navbar-toggler-icon{
   background-image: url('../media/mobile/mobile-navigation-ico.png');
 }
+
 .flow-text{
   padding:0px 30px;
 }
+
 .conceptual-img{
   padding: 10px;
   width: 30%;
 }
+
 #info-bar{
-  padding: 20px;
+  padding: 18px;
   text-align: left;
   text-transform: uppercase;
-  background-color: #68b77a;
   margin-bottom: 10px;
+  display: flex;
 }
+
 #tools-list{
   width:100%;
-  list-style-type: gurmukhi;
 }
+
 #tools-list li{
   max-width:300px;
   margin:auto;
   padding: 2px 0px;
 }
+
 #main-content{
   min-height: 350px;
 }
+
 #main-info-table{
   text-align: center;
 }
+
 #table-stats{
   width: 100%;
   margin:auto;
-  border: 1px solid #d8d8d8;
+  margin-top: 25px;
+  background-color: $white;
+  border: 1px solid #ddd;
 }
 #adsense1{
 
@@ -154,7 +185,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   padding: 5px 0px;
 }
 footer{
-  background: #68b77a;
+  border-top: 2px solid $green;
   max-height: 70px;
   width: 100%;
   bottom: 0px;
@@ -164,6 +195,7 @@ footer{
   margin-bottom: 0px;
   text-align: right;
   margin-right: 15px;
+
 }
 footer .language-switcher{
   margin-left: 25px;
@@ -183,6 +215,21 @@ footer .language-switcher img{
 /* posts */
 .post-area{
   border-right: 1px solid #bfbfbf;
+}
+/* jquery uploader*/
+.row.fileupload-buttonbar{
+  margin-bottom: -450px;
+  margin-left: -50px;
+}
+@media screen and (min-width: 1024px){
+  .row.fileupload-buttonbar {
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .row.fileupload-buttonbar {
+    width: 1200px;
+  }
 }
 @media screen and (max-width:767px){
   #main-content{
@@ -242,7 +289,6 @@ footer .language-switcher img{
   .navbar-nav.mr-auto{
     margin:auto;
   }
-
 }
 
 

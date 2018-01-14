@@ -21,6 +21,5 @@
     <div class="col-md-3 sidebar">
     </div>
 </div>
-<?php include_once "footer.php"; ?>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md">
-   <a class="navbar-brand" href="#">CONTADOR de Palavras</a>
+   <a class="navbar-brand" href="<?php echo $home; ?>">O Contador de palavras</a>
 <!--<img style="" src="includes/media/icons8-contador-50.png"/>-->
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -8,16 +8,13 @@
     <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="<?=$home?>">1 - Início <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?=$home?>">Ferramenta<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.php"> 2 - Sobre</a>
+                <a class="nav-link" href="donate.php">Ajude-nos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="donate.php">3 -Ajude o contador</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="donate.php">4 - Compartilhe</a>
+                <a class="nav-link" href="donate.php">Compartilhe</a>
             </li>
             <!--            <li class="nav-item">-->
             <!--                <a class="nav-link disabled" href="#">Disabled</a>-->

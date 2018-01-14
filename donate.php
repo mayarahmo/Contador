@@ -8,8 +8,10 @@
     <div class="col-md-9 post-area">
         <h2>Ajude o Contador de palavras</h2>
 
-        <p class="flow-text">O contador de palavras nasceu para permanecer gratuito e pretendemos continuar assim. Ajude este projeto a seguir.
-        Estamos trabalhando na expansão e melhoramento desta ferramenta. Você pode ajudar a gente com qualquer quantia. </p>
+        <p class="flow-text">O contador de palavras nasceu com objetivo de oferecer ferramentas de texto grátis e queremos oferecer ferramentas de texto
+        cada vez mais complexas totalmente de graça. Você pode ajudar a gente com qualquer quantia. </p>
+
+
 
         <!-- formulário de doação -->
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-form">
@@ -25,6 +27,5 @@
     <div class="col-md-3 sidebar">
     </div>
 </div>
-<?php include_once "footer.php"; ?>
 </body>
 </html>

@@ -5,19 +5,23 @@
 <body>
 <?php include_once "navbar.php"; ?>
 <div id="main-content" class="col-xs-12">
-    <div id="info-bar" class="col-xs-12">
-        <span>Palavras: </span><span class="word-count">00</span>
-        <span>Caracteres: </span><span class="character-count">00</span><BR/>
-    </div>
     <div id="main-form"  class="col-xs-12 col-md-6 float-left">
+
+        <div id="info-bar" class="col-xs-12 col-md-6">
+<!--            <span>Palavras: </span><span class="word-count">00</span>-->
+<!--            <span>Caracteres: </span><span class="character-count">00</span>-->
+            <?php include_once "includes/script/jQuery-File-Upload-master/index.html"; ?>
+        </div>
         <form name="form-text" method="post" action="" class="">
-            <textarea id="text" name="text" cols="75" rows="12" placeholder="<-- Coloque seu texto aqui -->"></textarea><BR/>
+            <textarea id="text" name="text" cols="75" rows="12" placeholder="<-- Cole seu texto aqui -->"></textarea><BR/>
             <!--    <button type="submit">Contar</button>-->
         </form>
         <div id="functions-bar" class="float-left">
 <!--            <form id="form-functions" action="">-->
+
                 <input type="text" name="word" id="word" class="ipt-count-word">&nbsp;<button class="btn-count-word" onclick="countOcurrences(document.getElementById('word').value)">Conta palavra</button><span id="word-ocurrences">00</span>
-                <button onclick="revert()" name="" class="btn-invert-text">Inverte texto &#8645;</button>
+                <button onclick="revert()" name="" class="btn-invert-text">Inverte texto &#8645;</button><br/>
+                <input type="text" name="lorem" id="lorem" class="ipt-count-lorem" placeholder="Qtd de parágrafos">&nbsp;<button class="btn-lorem" onclick="countOcurrences(document.getElementById('word').value)">Gerador de lorem ipsum</button>
 <!--
                 </form>-->
         </div>
@@ -58,6 +62,6 @@
         </div>
     </div>
 </div>
-<?php include_once "footer.php"; ?>
+<?php include_once "scripts.php" ?>
 </body>
 </html>
