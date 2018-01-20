@@ -10,7 +10,7 @@
         <p class="flow-text">O contador de palavras nasceu em janeiro de 2018 com objetivo de oferecer ferramentas de texto grátis.</p>
         <p class="flow-text">Atualmente a ferramenta conta com as seguintes funcionalidades:</p>
 
-        <ul id="tools-list">
+        <ul class="tools-list" id="tools-list">
             <li>Inversão de Texto</li>
             <li>Contagem de ocorrência de palavras </li>
             <li>Contagem de caracteres, palavras, sentenças e parágrafos e outras estatísticas</li>

@@ -7,14 +7,15 @@
 
     <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="<?=$home?>">Ferramenta<span class="sr-only">(current)</span></a>
-            </li>
+<!--            <li class="nav-item active">-->
+<!--                <a class="nav-link" href="--><?//=$home?><!--">Ferramenta<span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
             <li class="nav-item">
                 <a class="nav-link" href="donate.php">Ajude-nos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="donate.php">Compartilhe</a>
+                <!-- Load Facebook SDK for JavaScript -->
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcontadordepalavras.net%2F&amp;src=sdkpreparse" class="nav-link">Compartilhe</a>
             </li>
             <!--            <li class="nav-item">-->
             <!--                <a class="nav-link disabled" href="#">Disabled</a>-->

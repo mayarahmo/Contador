@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
 
 $white: #fff;
+$lighter-gray: #DDD;
 $light-gray: #f3f2f2;
 $dark-gray: #444;
+$darker-light-gray: #d4d2d2;
 $black: #000;
 $green: #7de09b;
 $light-green: #1cc580;
@@ -10,7 +12,6 @@ $orange: #ffc107;
 $dark-green: #28a745;
 $yellow: #ffe907;
 $light-yellow: #fbee66;
-
 
 *{
   font-family: 'Oswald', sans-serif;
@@ -29,7 +30,7 @@ table, tr,th,td{
   color: $black;
 }
 
-#paypal-form{
+.paypal-form{
   margin-top: 20px;
 }
 
@@ -56,7 +57,7 @@ textarea{
   width: 100%;
   resize: none;
   border-radius: 5px;
-  border: 2px solid $green;
+  border: 2px solid $lighter-gray;
 }
 
 button, select{
@@ -65,7 +66,7 @@ button, select{
   color: $white;
   padding: 8px 12px;
   border: none;
-  font-size: 20px;
+  font-size: 16px;
   background-color: $dark-green;
   border: $dark-green;
 }
@@ -106,12 +107,12 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   color: #5f5d5d;
 }
 
-#word{
+.word{
   text-transform: uppercase;
   font-weight: bold;
   color: $orange;
 }
-#word-ocurrences{
+.word-ocurrences{
   margin-left: 5px;
 }
 
@@ -123,7 +124,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   color: #2d2d2d;
 }
 
-.nav-item{
+.navbar-nav .nav-item{
   padding: 0px 45px;
   font-weight: bold;
   font-size: 18px;
@@ -142,7 +143,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   width: 30%;
 }
 
-#info-bar{
+.info-bar{
   padding: 18px;
   text-align: left;
   text-transform: uppercase;
@@ -150,40 +151,43 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   display: flex;
 }
 
-#tools-list{
+.tools-list{
   width:100%;
 }
 
-#tools-list li{
+.tools-list li{
   max-width:300px;
   margin:auto;
   padding: 2px 0px;
 }
 
-#main-content{
+.main-content{
   min-height: 350px;
 }
 
-#main-info-table{
+.main-info-table{
   text-align: center;
 }
 
-#table-stats{
+.table-stats{
   width: 100%;
   margin:auto;
   margin-top: 25px;
   background-color: $white;
   border: 1px solid #ddd;
 }
-#adsense1{
+.adsense1{
 
 }
-#form-functions{
+
+.form-functions{
   padding: 30px;
 }
-#functions-bar{
+
+.functions-bar{
   padding: 5px 0px;
 }
+
 footer{
   border-top: 2px solid $green;
   max-height: 70px;
@@ -197,58 +201,99 @@ footer{
   margin-right: 15px;
 
 }
+
 footer .language-switcher{
   margin-left: 25px;
 }
+
 footer .language-switcher img{
   padding: 0px 7px;
 }
+
 .main-footer.post-footer{
   margin-top:0px;
 }
-#info-bar .word-count{
+
+.info-bar .word-count{
   margin-right: 15px;
 }
+
 .navbar-nav.mr-auto{
   margin-left: 45px;
 }
+
 /* posts */
 .post-area{
   border-right: 1px solid #bfbfbf;
 }
+
 /* jquery uploader*/
 .row.fileupload-buttonbar{
   margin-bottom: -450px;
   margin-left: -50px;
 }
+
+.bloco-msg{
+  text-align: center;
+  margin-top: 15px;
+  width:inherit;
+}
+
+.bloco-msg .msg{
+  border: 1px solid $lighter-gray;
+  border-top: none;
+  padding: 7px;
+}
+
+.bloco-msg .nav-tabs{
+  margin-bottom: 0px;
+}
+
+.info-tabs{
+  width: 500px;
+}
+
+.bloco-msg .tab.nav-tabs li{
+  list-style-type: none;
+}
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 1024px){
   .row.fileupload-buttonbar {
     width: 1024px;
   }
+  .mobile{
+    display: none;
+  }
 }
+
 @media screen and (min-width: 1200px){
   .row.fileupload-buttonbar {
     width: 1200px;
   }
 }
-@media screen and (max-width:767px){
-  #main-content{
+
+@media screen and (max-width:1024px){
+  .desktop{
+    display: none;
+  }
+  .main-content{
     margin-top: 25px;
     position: relative;
     min-height: 765px;
   }
-  #table-stats{
+  .table-stats{
     width: 100%;
     margin: auto;
   }
-  #form-functions{
+  .form-functions{
     margin:auto;
     padding:15px;
   }
-  #info-bar{
+  .info-bar{
     padding: 0px 20px 20px;
   }
-  #functions-bar{
+  .functions-bar{
     padding: 20px 0px;
   }
   footer{
@@ -273,8 +318,9 @@ footer .language-switcher img{
   .main-section.post-section.post-donate{
     max-height: 350px;
   }
-  .nav-item{
+  .navbar-nav .nav-item{
     padding: 0px;
+    font-size: 14px;
   }
   .main-footer.post-footer{
     margin-top: 195px;
@@ -282,12 +328,11 @@ footer .language-switcher img{
   footer{
     text-align: center;
   }
-  .nav-item {
-    padding: 0px;
-    font-size: 14px;
-  }
   .navbar-nav.mr-auto{
     margin:auto;
+  }
+  .row.fileupload-buttonbar{
+    margin-bottom: -70px;
   }
 }
 
