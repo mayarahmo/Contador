@@ -18,9 +18,6 @@
             <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
         </form>
-
-
-
     </div>
     <div class="col-md-3 sidebar">
         <!-- 300x600_contadordepalavras.net -->

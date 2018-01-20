@@ -1,4 +1,4 @@
-<html lang="pt-br">
+<html lang="pt-br" prefix="og: http://contadordepalavras.net/ns#">
 <head>
 <?php include_once "head.php"; ?>
 </head>
@@ -69,8 +69,19 @@
         <p class="msg msg-active">Conte palavras, caracteres, parágrafos, sentenças (períodos) do seu texto, ocorrências
             de uma determinada palavra ou inverta uma URL. </p>
     </div>
-    <div id="adsense-1" class="adsense1 col-md-12">
+    <div id="adsense-1" class="adsense1 col-md-12 desktop">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-2037981448650235"
+             data-ad-slot="1896425862"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
 
+    </div>
     </div>
 </div>
 <?php include_once "scripts.php" ?>
