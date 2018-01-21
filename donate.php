@@ -8,8 +8,8 @@
     <div class="col-md-9 post-area">
         <h2>Ajude o Contador de palavras</h2>
 
-        <p class="flow-text">O contador de palavras nasceu com objetivo de oferecer ferramentas de texto grátis e queremos oferecer ferramentas de texto
-        cada vez mais complexas totalmente de graça. Você pode ajudar com qualquer quantia. </p>
+        <p class="flow-text">O contador de palavras nasceu com objetivo de oferecer ferramentas de texto grátis e de qualidade
+            e pretendemos permanecer sempre assim. Você pode ajudar com qualquer quantia. </p>
 
         <!-- formulário de doação -->
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paypal-form" class="paypal-form">

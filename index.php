@@ -46,13 +46,13 @@
             <tr>
                 <td>Parágrafos</td><td><span class="paragraph-count">00</span></td>
             </tr>
-<!--            <tr>-->
+            <tr>
 <!--                <td>Sílabas</td><td><span class="">-</span></td>-->
 <!--            </tr>-->
                 <td>Sentenças</td><td><span class="sentence-count">01</span></td>
 <!--            <tr>-->
 <!--                <td>Palavras únicas</td><td><span class="word-count">00</span></td>-->
-<!--            </tr>-->
+            </tr>
             <tr>
                 <th colspan="2">Densidade de palavras (Em breve)</th>
             </tr>
@@ -80,8 +80,6 @@
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-
-    </div>
     </div>
 </div>
 <?php include_once "scripts.php" ?>

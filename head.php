@@ -1,6 +1,6 @@
 <title>Contador de palavras - ferramenta gratuita para contar palavras e mais estatísticas de texto  </title>
 
-<?php  $home = "http://localhost:80/Contador"; ?>
+<?php  $home = "http://contadordepalavras.net"; ?>
 
 <!-- Required meta tags -->
 <meta charset="utf-8">
