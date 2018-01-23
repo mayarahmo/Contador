@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
 
 $white: #fff;
+$off-white: #fdfdfd;
 $lighter-gray: #DDD;
 $light-gray: #f3f2f2;
 $dark-gray: #444;
@@ -29,6 +30,7 @@ table{
 
 table, tr,th,td{
   color: $black;
+  background: $off-white;
 }
 
 .paypal-form{
@@ -36,15 +38,10 @@ table, tr,th,td{
 }
 
 th{
-  background-color: $light-gray;
   font-weight: bold;
   font-size: 19px;
   text-transform: none;
   text-decoration: underline;
-}
-
-tr{
-  background-color: $light-gray;
 }
 
 td{
