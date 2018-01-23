@@ -5,7 +5,7 @@
 <body>
 <?php include_once "navbar.php"; ?>
 <div class="main-section post-section post-donate">
-    <div class="col-md-9 post-area">
+    <div class="col-md-12 post-area">
         <h2>Ajude o Contador de palavras</h2>
 
         <p class="flow-text">O contador de palavras nasceu com objetivo de oferecer ferramentas de texto grátis e de qualidade
@@ -30,17 +30,8 @@
             </script>
         </div>
     </div>
-    <div class="col-md-3 sidebar desktop">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 300x600_contadordepalavras.net -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:300px;height:600px"
-             data-ad-client="ca-pub-2037981448650235"
-             data-ad-slot="7681436717"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
+<!--    <div class="col-md-3 sidebar desktop">-->
+<!--    </div>-->
 </div>
 </body>
 </html>

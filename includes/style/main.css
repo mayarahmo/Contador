@@ -13,7 +13,7 @@ table, tr, th, td {
   color: #000; }
 
 .paypal-form {
-  margin-top: 20px; }
+  margin: 45px 0px; }
 
 th {
   background-color: #f3f2f2;
@@ -23,7 +23,6 @@ th {
   text-decoration: underline; }
 
 tr {
-  letter-spacing: 2px;
   background-color: #f3f2f2; }
 
 td {
@@ -45,6 +44,9 @@ button, select {
   font-size: 16px;
   background-color: #28a745;
   border: #28a745; }
+
+.btn-blue {
+  background: #007bff !important; }
 
 .navbar {
   color: #fff;
@@ -186,6 +188,9 @@ footer .language-switcher img {
 
 .bloco-msg .nav-tabs {
   margin-bottom: 0px; }
+
+.bloco-msg .nav-tabs .aba-item {
+  font-weight: bold; }
 
 .info-tabs {
   width: 500px; }

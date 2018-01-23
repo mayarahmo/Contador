@@ -20,7 +20,7 @@
 <!--            <form id="form-functions" class="form-functions" action="">-->
 
                 <input type="text" name="word" id="word" class="word ipt-count-word">&nbsp;<button class="btn-count-word" onclick="countOcurrences(document.getElementById('word').value)">Conta palavra</button><span class="word-ocurrences" id="word-ocurrences">00</span>
-                <button onclick="revert()" name="" class="btn-invert-text">Inverte texto &#8645;</button><br/>
+                <button onclick="revert()" name="" class="btn-blue btn-invert-text">Inverte texto &#8645;</button><br/>
 <!--                <input type="text" name="lorem" id="lorem" class="ipt-count-lorem" placeholder="Qtd de parágrafos">&nbsp;<button class="btn-lorem" onclick="countOcurrences(document.getElementById('word').value)">Gerador de lorem ipsum</button>-->
 <!--
                 </form>-->
@@ -62,7 +62,7 @@
 <div class="row col-md-12 col-xs-6">
     <div class="col-md-6 col-xs-12 bloco-msg" id="bloco-msg">
         <ul class="tab nav-tabs">
-            <li class="nav-item"><a class="nav-link active" href="#">Passos básicos</a></li>
+            <li class="nav-item aba-item"><a class="nav-link active" href="#">Passos básicos</a></li>
 <!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
 <!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
         </ul>

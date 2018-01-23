@@ -12,6 +12,7 @@ $orange: #ffc107;
 $dark-green: #28a745;
 $yellow: #ffe907;
 $light-yellow: #fbee66;
+$blue: #007bff;
 
 *{
   font-family: 'Oswald', sans-serif;
@@ -31,7 +32,7 @@ table, tr,th,td{
 }
 
 .paypal-form{
-  margin-top: 20px;
+  margin: 45px 0px;
 }
 
 th{
@@ -67,6 +68,10 @@ button, select{
   font-size: 16px;
   background-color: $dark-green;
   border: $dark-green;
+}
+
+.btn-blue{
+  background: $blue !important;
 }
 
 .navbar{
@@ -243,6 +248,10 @@ footer .language-switcher img{
 
 .bloco-msg .nav-tabs{
   margin-bottom: 0px;
+}
+
+.bloco-msg .nav-tabs .aba-item {
+  font-weight: bold;
 }
 
 .info-tabs{
