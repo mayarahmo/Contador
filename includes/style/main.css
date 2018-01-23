@@ -46,6 +46,9 @@ button, select {
 .btn-blue {
   background: #007bff !important; }
 
+.btn-orange {
+  background-color: #ffc107 !important; }
+
 .navbar {
   color: #fff;
   background-color: #f3f2f2; }

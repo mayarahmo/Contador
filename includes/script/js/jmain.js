@@ -1,6 +1,7 @@
 $(document).ready( function () {
 
     var teste = 0;
+    var original_text = "";
 
     if ($('.main-section.post-section').length > 0 ){
         $('footer').addClass('post-footer');
@@ -25,6 +26,7 @@ $(document).ready( function () {
 
     var density_uniques = [];
     $('#text').on('keyup', function (){
+        original_text = $(this).val();
         var words = [];
         words = $(this).val().split(/\s/g);
 
@@ -50,6 +52,18 @@ $(document).ready( function () {
 
         // ordernar density_uniques pela soma
 
+    });
+
+    i = 0;
+    $(".btn-upperlower").click("toogle",function () {
+
+        if (i == 0){
+            $("#text").val($("#text").val().toUpperCase()); i++;
+        }else if (i == 1){
+            $("#text").val($("#text").val().toLowerCase()); i++;
+        }else{
+            $("#text").val(original_text); i = 0;
+        }
     });
 
 });
