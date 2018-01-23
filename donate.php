@@ -18,9 +18,19 @@
             <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
         </form>
+        <div class="">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- 728x90_contadordepalavras.net -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-2037981448650235"
+                 data-ad-slot="7872351868"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
     </div>
-    <div class="col-md-3 sidebar">
-        <!-- 300x600_contadordepalavras.net -->
+    <div class="col-md-3 sidebar desktop">
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- 300x600_contadordepalavras.net -->
         <ins class="adsbygoogle"

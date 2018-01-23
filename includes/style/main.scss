@@ -43,14 +43,12 @@ th{
 }
 
 tr{
-  letter-spacing: 2px;
   background-color: $light-gray;
 }
 
 td{
   text-transform: none;
   font-size: 18px;
-  letter-spacing: 2px;
 }
 
 textarea{
@@ -108,9 +106,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
 }
 
 .word{
-  text-transform: uppercase;
   font-weight: bold;
-  color: $orange;
 }
 .word-ocurrences{
   margin-left: 5px;

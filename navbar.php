@@ -9,10 +9,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="donate.php">Ajude-nos</a>
             </li>
-            <li class="nav-item">
-                <!-- Load Facebook SDK for JavaScript -->
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcontadordepalavras.net%2F&amp;src=sdkpreparse" class="nav-link">Compartilhe</a>
-            </li>
         </ul>
     </div>
 </nav>

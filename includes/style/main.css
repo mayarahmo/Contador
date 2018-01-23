@@ -28,8 +28,7 @@ tr {
 
 td {
   text-transform: none;
-  font-size: 18px;
-  letter-spacing: 2px; }
+  font-size: 18px; }
 
 textarea {
   width: 100%;
@@ -79,9 +78,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   color: #5f5d5d; }
 
 .word {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #ffc107; }
+  font-weight: bold; }
 
 .word-ocurrences {
   margin-left: 5px; }
