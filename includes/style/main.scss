@@ -54,6 +54,7 @@ textarea{
   resize: none;
   border-radius: 5px;
   border: 2px solid $lighter-gray;
+  font-size: 18px;
 }
 
 button, select{
@@ -134,6 +135,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
 
 .flow-text{
   padding:0px 30px;
+  font-size: 18px;
 }
 
 .conceptual-img{
@@ -235,6 +237,7 @@ footer .language-switcher img{
   text-align: center;
   margin-top: 15px;
   width:inherit;
+  font-size: 16px;
 }
 
 .bloco-msg .msg{

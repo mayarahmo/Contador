@@ -30,7 +30,8 @@ textarea {
   width: 100%;
   resize: none;
   border-radius: 5px;
-  border: 2px solid #DDD; }
+  border: 2px solid #DDD;
+  font-size: 18px; }
 
 button, select {
   background-color: #7de09b;
@@ -97,7 +98,8 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   background-image: url("../media/mobile/mobile-navigation-ico.png"); }
 
 .flow-text {
-  padding: 0px 30px; }
+  padding: 0px 30px;
+  font-size: 18px; }
 
 .conceptual-img {
   padding: 10px;
@@ -176,7 +178,8 @@ footer .language-switcher img {
 .bloco-msg {
   text-align: center;
   margin-top: 15px;
-  width: inherit; }
+  width: inherit;
+  font-size: 16px; }
 
 .bloco-msg .msg {
   border: 1px solid #DDD;
