@@ -34,6 +34,9 @@
                 <th colspan="2">Estatísticas básicas</th>
             </tr>
             <tr>
+                <td>Idioma</td><td><span class="">português</span></td>
+            </tr>
+            <tr>
                 <td>Palavras</td><td><span class="word-count">00</span></td>
             </tr>
             <tr>
@@ -56,7 +59,9 @@
 <!--                <td>Palavras únicas</td><td><span class="word-count">00</span></td>-->
             </tr>
             <tr>
-                <th colspan="2">Densidade de palavras (Em breve)</th>
+                <th colspan="2">Densidade de palavras (Top 10)</th>
+            </tr>
+            <tr id="density-result">
             </tr>
         </table>
     </div>
@@ -68,7 +73,7 @@
 <!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
 <!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
         </ul>
-        <p class="msg msg-active">Conte palavras, caracteres, linhas, parágrafos, sentenças do seu texto, ocorrências
+        <p class="msg msg-active">Essa é a ferramenta gratuita mais completa de estatísticas de texto em português é só o começo. Conte palavras, caracteres, linhas, parágrafos, sentenças, ocorrências
             de uma determinada palavra ou inverta uma URL. </p>
     </div>
     <div id="adsense-1" class="adsense1 col-md-12 desktop">

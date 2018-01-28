@@ -50,8 +50,36 @@ $(document).ready( function () {
             }
         }
 
-        // ordernar density_uniques pela soma
+        var density_ordem = []; // esse array vai guardar as palavras de acordo com o peso
+        for(i=1;i<10000;i++){ // rever essa questão desse máximo
+            density_ordem[i] = new Array();
+        }
 
+        var indice = 0;
+        // for(i=0;i<words.length;i++){
+            for(j=0;j<density_uniques.length;j++){
+                for(k=1;k<density_uniques[j].length;k++){
+                    indice = density_uniques[j][k-1];
+                    if (density_ordem[indice].indexOf(density_uniques[j][k]) == -1){
+                        density_ordem[indice].push(density_uniques[j][k]); 
+                    }     
+                    // na posição 1 haverá todas as palavras com 1 ocorrência
+                }    
+            }    
+        // } 
+
+        $("#density-result").text("");
+        var maximo = 0; // quantidade limite de palavras a serem exibidas
+        // retorna as 10 primeiras em density-result
+        for(i=density_ordem.length-1;i>0;i--){ // pegar as palavras mais usadas
+            for(j=0;j<density_ordem[i].length;j++){
+                if(density_ordem[i] != []){
+                    $("#density-result").append("<tr><td colspan=\"2\">"+density_ordem[i][j]+"<td colspan=\"2\">"+i+"</td></tr>");
+                    maximo++;
+                } 
+                if(maximo > 10) {break;}    
+            }
+        }           
     });
 
     i = 0;

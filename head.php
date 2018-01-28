@@ -1,4 +1,4 @@
-<title>Contador de palavras - ferramenta gratuita para contar palavras e mais estatísticas de texto  </title>
+<title>Contador de palavras - a ferramenta gratuita de estatísticas de texto em português mais completa  </title>
 
 <?php  $home = "http://contadordepalavras.net"; ?>
 
@@ -18,10 +18,9 @@
 <meta property="og:type"   content="website" />
 <meta property="og:url" content="http://contadordepalavras.net"/>
 <meta property="og:site_name" content="Contador de palavras"/>
-<meta property="og:title" content="Contador de palavras - a ferramenta gratuita de texto mais completa"/>
-<meta property="og:description" content="Conte palavras, caracteres, parágrafos, sentenças(períodos) do seu texto, ocorrências
-            de uma determinada palavra ou inverta uma URL"/>
-<meta property="og:image" content="" />
+<meta property="og:title" content="Contador de palavras : a ferramenta de texto gratuita mais completa da internet"/>
+<meta property="og:description" content="Conte palavras, caracteres, linhas, parágrafos e sentenças do seu texto, conte ocorrências, mude de caixa ou inverta uma URL"/>
+<meta property="og:image" content="<?php echo $home; ?>/includes/media/tally-counter.jpg" />
 
 <!-- BOOSTRAP -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
