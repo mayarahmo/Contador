@@ -73,8 +73,8 @@ $(document).ready( function () {
         // retorna as 10 primeiras em density-result
         for(i=density_ordem.length-1;i>0;i--){ // pegar as palavras mais usadas
             for(j=0;j<density_ordem[i].length;j++){
-                if(density_ordem[i] != []){
-                    $("#density-result").append("<tr><td colspan=\"2\">"+density_ordem[i][j]+"<td colspan=\"2\">"+i+"</td></tr>");
+                if(density_ordem[i] != [] && density_ordem[i][j] != ""){
+                    $("#density-result").append("<tr style=\"width:inherit\"><td colspan=\"2\">"+density_ordem[i][j]+"<td colspan=\"2\">"+i+"</td></tr>");
                     maximo++;
                 } 
                 if(maximo > 10) {break;}    
