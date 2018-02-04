@@ -14,7 +14,7 @@
             <?php include_once "includes/script/js/jQuery-File-Upload-master/index.html"; ?>
         </div>
         <form name="form-text" method="post" action="" class="">
-            <textarea id="text" name="text" cols="75" rows="12" placeholder="<-- Copiei e cole seu texto aqui -->"></textarea><BR/>
+            <textarea id="text" name="text" cols="75" rows="12" placeholder="<-- Copie e cole seu texto aqui e veja o que acontece -->"></textarea><BR/>
             <!--    <button type="submit">Contar</button>-->
         </form>
         <div id="functions-bar" class="functions-bar float-left">
@@ -27,6 +27,29 @@
 <!--
                 </form>-->
         </div>
+        <div class="row col-md-12 col-xs-6">
+        <div class="col-md-12 col-xs-12 bloco-msg" id="bloco-msg">
+            <ul class="tab nav-tabs">
+                <li class="nav-item aba-item"><a class="nav-link active" href="#">Passos básicos de uso</a></li>
+    <!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
+    <!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
+            </ul>
+            <p class="msg msg-active">Essa é a ferramenta gratuita mais completa de estatísticas de texto em português é só o começo. Conte palavras, caracteres, linhas, parágrafos, sentenças, ocorrências
+                de uma determinada palavra ou inverta uma URL. </p>
+        </div>
+        <div id="adsense-1" class="adsense1 col-md-12 desktop">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-2037981448650235"
+                 data-ad-slot="1896425862"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
     </div>
     <div id="main-info-table" class="main-info-table col-xs-12 col-md-6 float-right">
         <table id="table-stats" class="table-stats col-md-12">
@@ -58,35 +81,10 @@
 <!--            <tr>-->
 <!--                <td>Palavras únicas</td><td><span class="word-count">00</span></td>-->
             </tr>
-            <tr>
-                <th colspan="2">Densidade de palavras (Top 10)</th>
-            </tr>
-            <tr id="density-result">
-            </tr>
+            <table id="density-result" class="density-result">
+               
+            </table>
         </table>
-    </div>
-</div>
-<div class="row col-md-12 col-xs-6">
-    <div class="col-md-6 col-xs-12 bloco-msg" id="bloco-msg">
-        <ul class="tab nav-tabs">
-            <li class="nav-item aba-item"><a class="nav-link active" href="#">Passos básicos</a></li>
-<!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
-<!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
-        </ul>
-        <p class="msg msg-active">Essa é a ferramenta gratuita mais completa de estatísticas de texto em português é só o começo. Conte palavras, caracteres, linhas, parágrafos, sentenças, ocorrências
-            de uma determinada palavra ou inverta uma URL. </p>
-    </div>
-    <div id="adsense-1" class="adsense1 col-md-12 desktop">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle"
-             style="display:block; text-align:center;"
-             data-ad-layout="in-article"
-             data-ad-format="fluid"
-             data-ad-client="ca-pub-2037981448650235"
-             data-ad-slot="1896425862"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
     </div>
 </div>
 <?php include_once "scripts.php" ?>

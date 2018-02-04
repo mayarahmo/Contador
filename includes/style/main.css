@@ -22,6 +22,10 @@ th {
   text-transform: none;
   text-decoration: underline; }
 
+.density-result th{
+  text-decoration: none;
+}  
+
 td {
   text-transform: none;
   font-size: 18px; }
@@ -102,8 +106,10 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
   background-image: url("../media/mobile/mobile-navigation-ico.png"); }
 
 .flow-text {
-  padding: 0px 30px;
-  font-size: 18px; }
+  padding: 0px 20%;
+  font-size: 18px;
+  text-align: left;
+  }
 
 .conceptual-img {
   padding: 10px;
@@ -130,7 +136,7 @@ span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocur
 .main-info-table {
   text-align: center; }
 
-.table-stats {
+.table-stats, .density-result {
   width: 100%;
   margin: auto;
   margin-top: 25px;
@@ -221,7 +227,7 @@ footer .language-switcher img {
     position: relative;
     min-height: 765px; }
 
-  .table-stats {
+  .table-stats, .density-result {
     width: 100%;
     margin: auto; }
 
@@ -271,6 +277,13 @@ footer .language-switcher img {
     margin: auto; }
 
   .row.fileupload-buttonbar {
-    margin-bottom: -70px; } }
+    margin-bottom: -70px; } 
+
+    .flow-text{
+      text-align: center;
+      padding: 0px 15px;
+    }}
+
+
 
 /*# sourceMappingURL=main.css.map */
