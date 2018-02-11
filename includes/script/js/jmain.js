@@ -72,16 +72,16 @@ $(document).ready( function () {
 
         $("#density-result").text("");
         $("#density-result").append("<tr><th colspan=\"6\">Densidade de palavras (Top 10 mais usadas)</th></tr>");
-        $("#density-result").append("<tr><th colspan=\"2\">Palavra</th><th colspan=\"2\">Ocorrência</th><th colspan=\"2\">Peso</th></tr>");
+        $("#density-result").append("<tr><th colspan=\"2\">palavra</th><th colspan=\"2\">ocorrências</th><th colspan=\"2\">peso</th></tr>");
         var maximo = 0; // limite de palavras a serem exibidas
         // retorna as 10 primeiras em density-result
         var percentagem = 0;
         for(i=density_ordem.length-1;i>0;i--){ // pegar as palavras mais usadas
             for(j=0;j<density_ordem[i].length;j++){
                 if(density_ordem[i] != [] && density_ordem[i][j] != ""){
-                    percentagem = (parseInt(density_ordem[i]) / parseInt(word_count)); 
-                    // alert(percentagem);
-                    $("#density-result").append("<tr style=\"width:inherit\"><td colspan=\"2\">"+density_ordem[i][j]+"<td colspan=\"2\">"+i+"</td><td colspan=\"2\">"+percentagem+"</td></tr>");
+                    percentagem = (i / word_count) * 100; 
+                    percentagem = Math.round(percentagem * 100) / 100;
+                    $("#density-result").append("<tr style=\"width:inherit\"><td colspan=\"2\" class=\"density-word\">"+density_ordem[i][j]+"<td colspan=\"2\" class=\"number-style\" id=\"word-ocurrences\">"+i+"</td><td colspan=\"2\" class=\"number-style\">"+percentagem+"%</td></tr>");
                     maximo++;
                 } 
                 if(maximo > 10) {break;}    

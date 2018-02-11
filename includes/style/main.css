@@ -20,11 +20,15 @@ th {
   font-weight: bold;
   font-size: 19px;
   text-transform: none;
-  text-decoration: underline; }
+  line-height: 35px;}
 
 .density-result th{
-  text-decoration: none;
+  text-decoration: none;x
 }  
+
+.density-word{
+  font-size: 24px;
+}
 
 td {
   text-transform: none;
@@ -72,14 +76,9 @@ button, select {
   padding: 45px 0px 30px;
   font-weight: bold; }
 
-span.word-count, .character-count, .paragraph-count, .sentence-count, #word-ocurrences, .line-count {
-  font-weight: bold;
-  font-size: 26px;
-  color: #177d54;
-  padding: 1px 2px;
-  box-shadow: 0.1px 0.1px grey;
-  background-color: #fff;
-  border-radius: 2px; }
+.number-style {   font-weight: bold;   font-size: 24px;   color: #0094ff;
+padding: 1px 2px;   box-shadow: 0.1px 0.1px grey;   background-color: #fff;
+border-radius: 2px; } 
 
 .copyright {
   margin-right: 15px;
@@ -207,6 +206,10 @@ footer .language-switcher img {
 
 .bloco-msg .tab.nav-tabs li {
   list-style-type: none; }
+
+span.btn.btn-success.fileinput-button{
+  max-width: 100%;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 1024px) {

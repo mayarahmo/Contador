@@ -20,7 +20,7 @@
         <div id="functions-bar" class="functions-bar float-left">
 <!--            <form id="form-functions" class="form-functions" action="">-->
 
-                <input type="text" name="word" id="word" class="word ipt-count-word">&nbsp;<button class="btn-count-word" onclick="countOcurrences(document.getElementById('word').value)">Conta palavra</button><span class="word-ocurrences" id="word-ocurrences">00</span>
+                <input type="text" name="word" id="word" class="word ipt-count-word">&nbsp;<button class="btn-count-word" onclick="countOcurrences(document.getElementById('word').value)">Conta palavra</button><span class="word-ocurrences number-style" id="word-ocurrences">00</span>
                 <button onclick="revert()" name="" class="btn-blue btn-invert-text">Inverte texto &#8645;</button>
                 <button onclick="" name="" class="btn-orange btn-upperlower">Aa</button><br/>
 <!--                <input type="text" name="lorem" id="lorem" class="ipt-count-lorem" placeholder="Qtd de parágrafos">&nbsp;<button class="btn-lorem" onclick="countOcurrences(document.getElementById('word').value)">Gerador de lorem ipsum</button>-->
@@ -57,32 +57,33 @@
                 <th colspan="2">Estatísticas básicas</th>
             </tr>
             <tr>
-                <td>Idioma</td><td><span class="">português</span></td>
+                <td>idioma</td><td><span class="">português</span></td>
             </tr>
             <tr>
-                <td>Palavras</td><td><span class="word-count">00</span></td>
+                <td>palavras</td><td><span class="word-count number-style">00</span></td>
             </tr>
             <tr>
-                <td>Caracteres</td><td><span class="character-count">00</span></td>
+                <td>caracteres</td><td><span class="character-count number-style">00</span></td>
             </tr>
             <tr>
-                <td>Linhas</td><td><span class="line-count">00</span></td>
+                <td>linhas</td><td><span class="line-count number-style">00</span></td>
             </tr>
             <tr>
                 <th colspan="2">Outras estatísticas</th>
             </tr>
             <tr>
-                <td>Parágrafos</td><td><span class="paragraph-count">00</span></td>
+                <td>parágrafos</td><td><span class="paragraph-count number-style">00</span></td>
             </tr>
             <tr>
 <!--                <td>Sílabas</td><td><span class="">-</span></td>-->
 <!--            </tr>-->
-                <td>Sentenças</td><td><span class="sentence-count">01</span></td>
+                <td>sentenças</td><td><span class="sentence-count number-style">01</span></td>
 <!--            <tr>-->
 <!--                <td>Palavras únicas</td><td><span class="word-count">00</span></td>-->
             </tr>
             <table id="density-result" class="density-result">
-               
+               <tr><th colspan="6">Densidade de palavras (Top 10 mais usadas)</th></tr>
+               <tr><th colspan="2">palavra</th><th colspan="2">ocorrências</th><th colspan="2">peso</th></tr>
             </table>
         </table>
     </div>

@@ -87,10 +87,3 @@ function countOcurrences(word){
     }
     if(document.getElementById("word").value != "") document.getElementById("word-ocurrences").innerHTML = ('0' + count).slice(-2);
 }
-
-function slicefunc(element){
-    // alert("oi");
-    //alert(document.getElementById(element));
-    //alert(element.innerText);
-    //element.textContent = ('0' + element.innerText).slice(-2);
-}
