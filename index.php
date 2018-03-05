@@ -20,9 +20,11 @@
         <div id="functions-bar" class="functions-bar float-left">
 <!--            <form id="form-functions" class="form-functions" action="">-->
 
-                <input type="text" name="word" id="word" class="word ipt-count-word">&nbsp;<button class="btn-count-word" onclick="countOcurrences(document.getElementById('word').value)">Conta palavra</button><span class="word-ocurrences number-style" id="word-ocurrences">00</span>
-                <button onclick="revert()" name="" class="btn-blue btn-invert-text">Inverte texto &#8645;</button>
-                <button onclick="" name="" class="btn-orange btn-upperlower">Aa</button><br/>
+                <input type="text" name="word" id="word" class="btnfunc word ipt-count-word">&nbsp;<button class="btn-count-word" onclick="countOcurrences(document.getElementById('word').value)">Conta palavra</button><span class="word-ocurrences number-style" id="word-ocurrences">00</span>
+                <button onclick="revert()" name="" class="btnfunc btn-blue btn-invert-text">Inverte texto &#8645;</button>
+                <button onclick="" name="" class="btnfunc btn-orange btn-upperlower">Aa</button>
+                <button onclick="" name="" class="btnfunc"><a href="https://br.lipsum.com/" target="_blank">Gerador de texto linguiça</a></button>
+                <button onclick="" name="" class="btnfunc btn-blue"><a href="https://goo.gl/" target="_blank">Criador de link limpo</a></button>
 <!--                <input type="text" name="lorem" id="lorem" class="ipt-count-lorem" placeholder="Qtd de parágrafos">&nbsp;<button class="btn-lorem" onclick="countOcurrences(document.getElementById('word').value)">Gerador de lorem ipsum</button>-->
 <!--
                 </form>-->
@@ -30,11 +32,11 @@
         <div class="row col-md-12 col-xs-6">
         <div class="col-md-12 col-xs-12 bloco-msg" id="bloco-msg">
             <ul class="tab nav-tabs">
-                <li class="nav-item aba-item"><a class="nav-link active" href="#">Passos básicos de uso</a></li>
+                <li class="nav-item aba-item"><a class="nav-link active" href="#">Bem vindo(a) ao Contador</a></li>
     <!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
     <!--            <li class="nav-item"><a class="nav-link" href="#">Passos básicos</a></li>-->
             </ul>
-            <p class="msg msg-active">Essa é a ferramenta gratuita mais completa de estatísticas de texto em português é só o começo. Conte palavras, caracteres, linhas, parágrafos, sentenças, ocorrências
+            <p class="msg msg-active">Essa é a ferramenta gratuita que pretende ser a ferramenta de estatísticas de texto mais completa. Conte palavras, caracteres, linhas, parágrafos, sentenças, ocorrências
                 de uma determinada palavra ou inverta uma URL. </p>
         </div>
         <div id="adsense-1" class="adsense1 col-md-12 desktop">

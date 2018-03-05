@@ -9,7 +9,7 @@
             <!-- <li class="nav-item">
                 <a class="nav-link" href="donate.php">Donate</a>
             </li> -->
-            <li class="nav-item">
+            <li class="nav-item" style="font-weight:normal">
                 <a class="nav-link" href="https://www.facebook.com/Contadordepalavrasnet-147459176051815" target="_blank">Siga-nos no Facebook</a>
             </li>
         </ul>

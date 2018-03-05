@@ -2,6 +2,10 @@
 * {
   font-family: 'Oswald', sans-serif; }
 
+body{
+  background: #fbf9f9;
+}
+
 body, table, td, th, tr {
   text-align: center; }
 
@@ -17,13 +21,14 @@ table, tr, th, td {
   margin: 45px 0px; }
 
 th {
-  font-weight: bold;
-  font-size: 19px;
+  font-size: 18px;
   text-transform: none;
-  line-height: 35px;}
+  line-height: 35px;
+  color: #403f3f;
+  font-weight: normal;}
 
 .density-result th{
-  text-decoration: none;x
+  text-decoration: none;
 }  
 
 .density-word{
@@ -37,9 +42,9 @@ td {
 textarea {
   width: 100%;
   resize: none;
-  border-radius: 5px;
   border: 2px solid #DDD;
-  font-size: 18px; }
+  font-size: 18px; 
+  }
 
 button, select {
   background-color: #7de09b;
@@ -49,7 +54,20 @@ button, select {
   border: none;
   font-size: 16px;
   background-color: #28a745;
-  border: #28a745; }
+  border: #28a745; 
+  cursor: pointer;}
+
+.btnfunc{
+  display: inline;
+  margin: 4px;
+
+}  
+
+.btnfunc a:link, .btnfunc a:visited{
+  text-transform: none;
+  text-decoration: none;
+  color: #fff;
+}
 
 .btn-blue {
   background: #007bff !important; }
@@ -76,7 +94,7 @@ button, select {
   padding: 45px 0px 30px;
   font-weight: bold; }
 
-.number-style {   font-weight: bold;   font-size: 24px;   color: #0094ff;
+.number-style {   font-weight: bold;   font-size: 20px;   color: #28a745;
 padding: 1px 2px;   box-shadow: 0.1px 0.1px grey;   background-color: #fff;
 border-radius: 2px; } 
 
@@ -99,7 +117,9 @@ border-radius: 2px; }
 .navbar-nav .nav-item {
   padding: 0px 45px;
   font-weight: bold;
-  font-size: 18px; }
+  font-size: 18px; 
+  text-transform: uppercase;
+  font-size: 14px;}
 
 .navbar-toggler-icon {
   background-image: url("../media/mobile/mobile-navigation-ico.png"); }
@@ -188,7 +208,9 @@ footer .language-switcher img {
   text-align: center;
   margin-top: 15px;
   width: inherit;
-  font-size: 16px; }
+  font-size: 16px; 
+  background: #fff;
+}
 
 .bloco-msg .msg {
   border: 1px solid #DDD;
