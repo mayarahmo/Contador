@@ -1,8 +1,9 @@
 $(document).ready( function () {
 
-    var teste = 0;
-    var original_text = "";
-
+    var lang = "pt_br";
+    var text = ""; // texto para 
+    var density_uniques = [];
+    
     if ($('.main-section.post-section').length > 0 ){
         $('footer').addClass('post-footer');
     }
@@ -10,6 +11,36 @@ $(document).ready( function () {
     $('lang-link').on('click', function () {
         $(this).addClass('active');
     });
+
+    // remover palavras da tabela de densidades
+    function wordRejectList(lang, word){
+        var file, cond, retorno;
+        var array = [];
+        if (lang == 'pt_br'){   
+            file = 'includes/scripsast/jass/psadsadt_br.txt';
+            fetch(file).then(function(response) {
+                if(response.ok) { // 200 status
+                  response.text().then(function(text) {
+                    array = text.split(/\s/g);
+                    for(i=0;i<array.length;i++){
+                        if (word === array[i]){ cond = true; }
+                    }
+
+                  });
+                }else{
+                    console.log("Não deu"+response.status+" - "+response.statusText);
+                } 
+            }); 
+        }
+
+        var retorno = cond ? true : false;
+
+        return retorno;
+    }
+
+    if (wordRejectList("pt_br","com")){
+        alert("Epa!");
+    }
 
     // gera array sem duplicatas
     function multiDimensionalUnique(arr) {
@@ -24,9 +55,9 @@ $(document).ready( function () {
         return uniques;
     }
 
-    var density_uniques = [];
+
     $('#text').on('keyup', function (){
-        original_text = $(this).val();
+        text = $(this).val();
         var words = [];
         words = $(this).val().split(/\s/g);
         word_count = words.length;
@@ -53,7 +84,7 @@ $(document).ready( function () {
         }
 
         var density_ordem = []; // esse array vai guardar as palavras de acordo com o peso
-        for(i=1;i<10000;i++){ // rever essa questão desse máximo
+        for(i=1;i<100000;i++){ // rever essa questão desse máximo
             density_ordem[i] = new Array();
         }
 
@@ -76,16 +107,19 @@ $(document).ready( function () {
         var maximo = 0; // limite de palavras a serem exibidas
         // retorna as 10 primeiras em density-result
         var percentagem = 0;
+        var number_zero_before;
         for(i=density_ordem.length-1;i>0;i--){ // pegar as palavras mais usadas
             for(j=0;j<density_ordem[i].length;j++){
                 if(density_ordem[i] != [] && density_ordem[i][j] != ""){
                     percentagem = (i / word_count) * 100; 
                     percentagem = Math.round(percentagem * 100) / 100;
-                    $("#density-result").append("<tr style=\"width:inherit\"><td colspan=\"2\" class=\"density-word\">"+density_ordem[i][j]+"<td colspan=\"2\" class=\"number-style\" id=\"word-ocurrences\">"+i+"</td><td colspan=\"2\" class=\"number-style\">"+percentagem+"%</td></tr>");
+                    if (i < 10) { number_zero_before = ('0' + i).slice(-2); } else{ number_zero_before = i;}
+                    $("#density-result").append("<tr style=\"width:inherit\"><td colspan=\"2\" class=\"density-word\">"+density_ordem[i][j]+"<td colspan=\"2\" class=\"number-style\" id=\"word-ocurrences\">"+number_zero_before+"</td><td colspan=\"2\" class=\"number-style\">"+percentagem+"%</td></tr>");
                     maximo++;
                 } 
                 if(maximo > 10) {break;}    
             }
+            if(maximo > 10) {break;}  
         }           
     });
 
@@ -97,7 +131,7 @@ $(document).ready( function () {
         }else if (i == 1){
             $("#text").val($("#text").val().toLowerCase()); i++;
         }else{
-            $("#text").val(original_text); i = 0;
+            $("#text").val(text); i = 0;
         }
     });
 

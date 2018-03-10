@@ -15,29 +15,21 @@ table {
 
 table, tr, th, td {
   color: #000;
-  background: #fdfdfd; }
+  background: #fdfdfd;
+  padding: 5px 0px; }
 
 .paypal-form {
   margin: 45px 0px; }
 
 th {
-  font-size: 18px;
-  text-transform: none;
+  font-size: 15px;
+  text-transform: uppercase;
   line-height: 35px;
-  color: #403f3f;
   font-weight: normal;}
 
-.density-result th{
-  text-decoration: none;
-}  
-
-.density-word{
-  font-size: 24px;
-}
-
 td {
-  text-transform: none;
-  font-size: 18px; }
+  text-transform: uppercase;
+  font-size: 14px; }
 
 textarea {
   width: 100%;
@@ -56,6 +48,15 @@ button, select {
   background-color: #28a745;
   border: #28a745; 
   cursor: pointer;}
+
+.density-result th{
+  text-decoration: none;
+}  
+
+.density-word{
+  font-size: 22px;
+  text-transform: none;
+}  
 
 .btnfunc{
   display: inline;
@@ -101,9 +102,6 @@ border-radius: 2px; }
 .copyright {
   margin-right: 15px;
   color: #5f5d5d; }
-
-.word {
-  font-weight: bold; }
 
 .word-ocurrences {
   margin-left: 5px; }
@@ -204,29 +202,29 @@ footer .language-switcher img {
   margin-bottom: -450px;
   margin-left: -50px; }
 
-.bloco-msg {
+.aba-msg {
   text-align: center;
   margin-top: 15px;
   width: inherit;
   font-size: 16px; 
-  background: #fff;
 }
 
-.bloco-msg .msg {
+.aba-msg .msg {
   border: 1px solid #DDD;
   border-top: none;
-  padding: 7px; }
+  padding: 7px; 
+  background: #fff;}
 
-.bloco-msg .nav-tabs {
+.aba-msg .nav-tabs {
   margin-bottom: 0px; }
 
-.bloco-msg .nav-tabs .aba-item {
+.aba-msg .nav-tabs .aba-item {
   font-weight: bold; }
 
 .info-tabs {
   width: 500px; }
 
-.bloco-msg .tab.nav-tabs li {
+.aba-msg .tab.nav-tabs li {
   list-style-type: none; }
 
 span.btn.btn-success.fileinput-button{
