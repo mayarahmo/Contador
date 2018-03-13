@@ -80,6 +80,7 @@
             </table>
         </table>
     </div>
+    <input type='hidden' id='wordRejectList'/>
 </div>
 <?php include_once "scripts.php" ?>
 </body>

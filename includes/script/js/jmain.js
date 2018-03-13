@@ -16,31 +16,42 @@ $(document).ready( function () {
     function wordRejectList(lang, word){
         var file, cond, retorno;
         var array = [];
-        if (lang == 'pt_br'){   
-            file = 'includes/scripsast/jass/psadsadt_br.txt';
-            fetch(file).then(function(response) {
-                if(response.ok) { // 200 status
-                  response.text().then(function(text) {
-                    array = text.split(/\s/g);
-                    for(i=0;i<array.length;i++){
-                        if (word === array[i]){ cond = true; }
-                    }
 
-                  });
-                }else{
-                    console.log("Não deu"+response.status+" - "+response.statusText);
-                } 
-            }); 
+        if ( lang == 'pt_br'){
+            file = 'includes/script/js/pt_br.txt';
         }
 
-        var retorno = cond ? true : false;
+        $('.navbar').append("<input type='hidden' id='wordRejectList'/>");
+        
+        fetch(file).then(function(response) {
+            if(response.ok) { // 200 status
+                response.text().then(function(text) {
+                    array = text.split(/\s/g);
+                    $('#wordRejectList').val(text);
+                    cond = true;
+                });
+            }else{
+                console.log("Não deu"+response.status+" - "+response.statusText);
+            } 
+        });
 
+        alert($('#wordRejectList').val());
+        alert(cond);
+
+        // for(i=0;i<array.length;i++){
+        //     if ( array[i] == word){ cond = true; /* rejected word */ }
+        // }
+
+        var retorno = cond ? true : false;
         return retorno;
     }
 
-    if (wordRejectList("pt_br","com")){
-        alert("Epa!");
+    if(wordRejectList("pt_br", "com")){
+        alert("Opa!");
     }
+
+    wordRejectList("pt_br", "com")
+    alert(document.getElementById('wordRejectList').value);
 
     // gera array sem duplicatas
     function multiDimensionalUnique(arr) {
@@ -61,12 +72,11 @@ $(document).ready( function () {
         var words = [];
         words = $(this).val().split(/\s/g);
         word_count = words.length;
-        // alert(word_count);
 
         var i = 0; j =0;
         var density = []; // array de densidade de palavras com duplicatas
         for(i=0;i<words.length;i++){
-            density[i] = [0,words[i]];
+            density[i] = [0,words[i].toLowerCase()];
         }
 
         // gera array sem duplicatas
@@ -76,7 +86,7 @@ $(document).ready( function () {
         for(i=0;i<words.length;i++){
             for(j=0;j<density_uniques.length;j++){
                 for(k=1;k<density_uniques[j].length;k++){
-                    if (density_uniques[j][k] == words[i]) {
+                    if (density_uniques[j][k] == words[i].toLowerCase()) {
                         density_uniques[j][k - 1]++;
                     }
                 }
@@ -88,6 +98,7 @@ $(document).ready( function () {
             density_ordem[i] = new Array();
         }
 
+        // Ranking de palavras
         var indice = 0;
         // for(i=0;i<words.length;i++){
             for(j=0;j<density_uniques.length;j++){
